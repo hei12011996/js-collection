@@ -3,13 +3,7 @@
 function choose_even(collection) {
 
   //implement here
-  let returnArray = [];
-  collection.forEach(function(element){
-  	if(element % 2 == 0){
-  		returnArray.push(element);
-  	}
-  });
-  return returnArray;
+  return collection.filter(element => (element % 2) == 0);
 }
 
 module.exports = choose_even;
